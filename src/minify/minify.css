@@ -1,0 +1,210 @@
+/* Styles pour la fonctionnalité de minimisation */
+
+/* Bouton de minimisation dans l'en-tête */
+.minify-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.minify-button:hover {
+  background-color: var(--color-hover);
+}
+
+.minify-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Canvas plein écran */
+.fullscreen-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+
+/* Chat minimisé */
+.minified-chat {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 300px;
+  background-color: var(--color-background);
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 12px 12px 12px 40px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+.minified-chat.hidden {
+  transform: translateY(20px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Bouton d'expansion */
+.expand-button {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--color-text-light);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.expand-button:hover {
+  color: var(--color-primary);
+}
+
+.expand-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Conteneur d'input minimisé */
+.minified-input-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 32px;
+  /* border: 1px solid black;
+  border-radius: 15px; */
+}
+
+/* Loader pour le chat minimisé */
+.minified-loader {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-primary);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 5;
+}
+
+.minified-loader.active {
+  opacity: 1;
+  animation: progress-line 2s infinite ease-in-out;
+}
+
+@keyframes progress-line {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+/* Zone de texte minimisée */
+.minified-input-area {
+  flex-grow: 1;
+  padding: 8px 34px 8px 1px;
+  border: 1px solid white;
+  border-radius: 15px;
+  font-family: var(--font-primary);
+  font-size: 0.9rem;
+  resize: none;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  min-height: 32px;
+  max-height: 200px;
+  overflow-y: auto;
+  line-height: 1.5;
+  font-family: "Courier New", Courier, monospace;
+
+}
+
+.minified-input-area:focus {
+  outline: none;
+  border-color: white;
+}
+
+.minified-input-area:disabled {
+  opacity: 0.7;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+/* Bouton d'envoi minimisé */
+.minified-send-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  border: 0.9px solid black;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.minified-send-button:hover {
+  background-color: black;
+}
+
+.minified-send-button:disabled {
+  background-color: var(--color-disabled);
+  cursor: not-allowed;
+}
+
+.minified-send-button svg {
+  width: 16px;
+  height: 16px;
+  fill: white;
+  stroke: white;
+}
+
+/* Cacher l'interface principale quand minimisée */
+.chatgpt-layout.hidden {
+  display: none;
+}
+
+/* Styles pour les thèmes */
+.dark-theme .fullscreen-canvas {
+  background-color: #343541;
+}
+
+.blue-theme .fullscreen-canvas {
+  background-color: #f0f9ff;
+}
+
+.green-theme .fullscreen-canvas {
+  background-color: #ecfdf5;
+}

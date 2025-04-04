@@ -1,0 +1,203 @@
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 50vw;
+    height: 57vh;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flip-card.hidden{
+    display: none;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner, 
+.flip-card.fakehover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border: 4px solid black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 60%;
+    transform: rotateY(180deg);
+    border: 6px solid black;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    overflow: hidden;
+    background-image: url('/img/timbre.png');
+    background-size: 200px;
+    background-position: 90% 10%;
+    background-repeat: no-repeat;
+}
+
+/* Ligne verticale sur l'axe Y */
+.flip-card-back::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 1px;
+    height: 80%;
+    background-color: #000;
+    transform: translateX(-50%);
+}
+
+/* Lignes horizontales sur l'axe X */
+.flip-card-back .horizontal-line-1 {
+position: absolute;
+    top: 60%;
+    left: 60%;
+    width: 30%;
+    height: 1px;
+    background-color: #000;
+    transform: translateY(-50%);
+}
+
+
+
+.flip-card-back .horizontal-line-2 {
+    content: "";
+        position: absolute;
+        top: 70%;
+        left: 60%;
+        width: 30%;
+        height: 1px;
+        background-color: #000;
+        transform: translateY(-50%);
+}
+
+
+
+.flip-card-back .horizontal-line-3 {
+    position: absolute;
+        top: 80%;
+        left: 60%;
+        width: 30%;
+        height: 1px;
+        background-color: #000;
+        transform: translateY(-50%);
+}
+
+
+.flip-card-back .horizontal-line-4 {
+    position: absolute;
+        top: 90%;
+        left: 60%;
+        width: 30%;
+        height: 1px;
+        background-color: #000;
+        transform: translateY(-50%);
+}
+
+
+
+/* Style pour le bouton d'action */
+.action-button,.mail-button {
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    bottom: 20px;
+    right: 40px;
+    padding: 10px 30px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.action-button.hidden, .mail-button.hidden {
+    display: none;
+}
+
+.action-button svg, .mail-button svg {
+    display: none;
+    pointer-events: none;
+    user-select: none;
+}
+
+.action-button:hover, .mail-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.line-text {
+    position: absolute;
+    width: 30%;
+    height: 40%;
+    top: 55%;
+    left: 60%;
+    background: transparent;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+    line-height: 2.5;
+}
+
+/* Suppression des styles pour les textarea individuels */
+#line1, #line2, #line3, #line4 {
+    display: none;
+}
+
+/* Ligne verticale sur l'axe Y */
+.flip-card-back::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 1px;
+    height: 80%;
+    background-color: #000;
+    transform: translateX(-50%);
+}
+
+

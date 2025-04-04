@@ -1,0 +1,18 @@
+[
+  { "box_2d": [25, 25, 225, 225], "label": "flannel" },
+  { "box_2d": [275, 25, 475, 225], "label": "turtleneck" },
+  { "box_2d": [525, 25, 725, 225], "label": "cardigan" },
+  { "box_2d": [775, 25, 975, 225], "label": "coat" },
+  { "box_2d": [25, 275, 225, 475], "label": "socks" },
+  { "box_2d": [275, 275, 475, 475], "label": "coffee" },
+  { "box_2d": [525, 275, 725, 475], "label": "pumpkin" },
+  { "box_2d": [775, 275, 975, 475], "label": "cocoa" },
+  { "box_2d": [25, 525, 225, 725], "label": "trashcan" },
+  { "box_2d": [275, 525, 475, 725], "label": "boots" },
+  { "box_2d": [525, 525, 725, 725], "label": "socks" },
+  { "box_2d": [775, 525, 975, 725], "label": "jar" },
+  { "box_2d": [25, 775, 225, 975], "label": "boot" },
+  { "box_2d": [275, 775, 475, 975], "label": "boots" },
+  { "box_2d": [525, 775, 725, 975], "label": "soup" },
+  { "box_2d": [775, 775, 975, 975], "label": "snowboots" }
+]

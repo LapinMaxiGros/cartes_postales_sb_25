@@ -1,0 +1,18 @@
+[
+  { "box_2d": [25, 25, 225, 225], "label": "pie" },
+  { "box_2d": [275, 25, 475, 225], "label": "umbrella" },
+  { "box_2d": [525, 25, 725, 225], "label": "maplesyrup" },
+  { "box_2d": [775, 25, 975, 225], "label": "poutine" },
+  { "box_2d": [25, 275, 225, 475], "label": "soup" },
+  { "box_2d": [275, 275, 475, 475], "label": "camera" },
+  { "box_2d": [525, 275, 725, 475], "label": "boots" },
+  { "box_2d": [775, 275, 975, 475], "label": "binoculars" },
+  { "box_2d": [25, 525, 225, 725], "label": "fishingrod" },
+  { "box_2d": [275, 525, 475, 725], "label": "cabin" },
+  { "box_2d": [525, 525, 725, 725], "label": "boat" },
+  { "box_2d": [775, 525, 975, 725], "label": "yacht" },
+  { "box_2d": [25, 775, 225, 975], "label": "cruiseship" },
+  { "box_2d": [275, 775, 475, 975], "label": "cabin" },
+  { "box_2d": [525, 775, 725, 975], "label": "champagne" },
+  { "box_2d": [775, 775, 975, 975], "label": "beer" }
+]

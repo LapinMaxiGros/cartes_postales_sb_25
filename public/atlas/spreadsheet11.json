@@ -1,0 +1,18 @@
+[
+  { "box_2d": [20, 20, 230, 230], "label": "powerbank" },
+  { "box_2d": [270, 20, 480, 230], "label": "glasses" },
+  { "box_2d": [520, 20, 730, 230], "label": "sunglasses" },
+  { "box_2d": [770, 20, 980, 230], "label": "umbrella" },
+  { "box_2d": [20, 270, 230, 480], "label": "gloves" },
+  { "box_2d": [270, 270, 480, 480], "label": "beanie" },
+  { "box_2d": [520, 270, 730, 480], "label": "binoculars" },
+  { "box_2d": [770, 270, 980, 480], "label": "openbook" },
+  { "box_2d": [20, 520, 230, 730], "label": "binoculars" },
+  { "box_2d": [270, 520, 480, 730], "label": "deckchair" },
+  { "box_2d": [520, 520, 730, 730], "label": "notebook" },
+  { "box_2d": [770, 520, 980, 730], "label": "map" },
+  { "box_2d": [20, 770, 230, 980], "label": "books" },
+  { "box_2d": [270, 770, 480, 980], "label": "rubikscube" },
+  { "box_2d": [520, 770, 730, 980], "label": "book" },
+  { "box_2d": [770, 770, 980, 980], "label": "jumprope" }
+]

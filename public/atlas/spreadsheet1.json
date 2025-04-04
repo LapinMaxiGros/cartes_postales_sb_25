@@ -1,0 +1,21 @@
+[
+  { "box_2d": [17, 17, 227, 227], "label": "bikini" },
+  { "box_2d": [267, 17, 477, 227], "label": "mat" },
+  { "box_2d": [517, 17, 727, 227], "label": "hatsunglasses" },
+  { "box_2d": [767, 17, 977, 227], "label": "sunhat" },
+
+  { "box_2d": [17, 267, 227, 477], "label": "towel" },
+  { "box_2d": [267, 267, 477, 477], "label": "umbrella" },
+  { "box_2d": [517, 267, 727, 477], "label": "cap" },
+  { "box_2d": [767, 267, 977, 477], "label": "flipflops" },
+
+  { "box_2d": [17, 517, 227, 727], "label": "umbrella" },
+  { "box_2d": [267, 517, 477, 727], "label": "palmtrees" },
+  { "box_2d": [517, 517, 727, 727], "label": "cooler" },
+  { "box_2d": [767, 517, 977, 727], "label": "snorkel" },
+
+  { "box_2d": [17, 767, 227, 977], "label": "float" },
+  { "box_2d": [267, 767, 477, 977], "label": "kayak" },
+  { "box_2d": [517, 767, 727, 977], "label": "kayak" },
+  { "box_2d": [767, 767, 977, 977], "label": "goggles" }
+]

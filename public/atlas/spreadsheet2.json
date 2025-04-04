@@ -1,0 +1,18 @@
+[
+  { "box_2d": [20, 20, 230, 230], "label": "shorts" },
+  { "box_2d": [270, 20, 480, 230], "label": "tshirt" },
+  { "box_2d": [520, 20, 730, 230], "label": "slippers" },
+  { "box_2d": [770, 20, 980, 230], "label": "socks" },
+  { "box_2d": [20, 270, 230, 480], "label": "sweatshirt" },
+  { "box_2d": [270, 270, 480, 480], "label": "sneakers" },
+  { "box_2d": [520, 270, 730, 480], "label": "jacket" },
+  { "box_2d": [770, 270, 980, 480], "label": "runningshoes" },
+  { "box_2d": [20, 520, 230, 730], "label": "tanktop" },
+  { "box_2d": [270, 520, 480, 730], "label": "glasses" },
+  { "box_2d": [520, 520, 730, 730], "label": "wipes" },
+  { "box_2d": [770, 520, 980, 730], "label": "bootle" },
+  { "box_2d": [20, 770, 230, 980], "label": "shoes" },
+  { "box_2d": [270, 770, 480, 980], "label": "backpack" },
+  { "box_2d": [520, 770, 730, 980], "label": "toiletries" },
+  { "box_2d": [770, 770, 980, 980], "label": "charger" }
+]

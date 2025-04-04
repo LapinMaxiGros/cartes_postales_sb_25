@@ -1,0 +1,26 @@
+.minified-input-area {
+    flex-grow: 1;
+    padding: 8px 44px 8px 12px;
+    border: none;
+    border-radius: 15px;
+    font-family: var(--font-primary);
+    font-size: 0.9rem;
+    resize: none;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    min-height: 32px;
+    max-height: 200px;
+    overflow-y: auto;
+    line-height: 1.5;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.minified-input-area:focus {
+    outline: none;
+}
+
+.minified-input-area:disabled {
+    opacity: 0.7;
+    color: var(--color-text);
+    background-color: var(--color-background);
+} 

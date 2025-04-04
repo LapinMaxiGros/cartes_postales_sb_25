@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat lexical</title>
+    <!-- <link rel="stylesheet" href="/src/styles/style.css" />
+    <link rel="stylesheet" href="/src/minify/minify.css" /> -->
+  </head>
+  <body>
+    <div id="app" class="chatgpt-layout">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <button class="new-chat-button">
+            <span>+ Nouvelle conversation</span>
+          </button>
+        </div>
+
+        <div class="dictionary-section">
+          <h3>Dictionnaire</h3>
+          <div id="dictionary-display" class="dictionary-display"></div>
+        </div>
+
+        <div class="sidebar-footer">
+          <div class="theme-selector">
+            <button class="theme-button" data-theme="theme-light">Clair</button>
+            <button class="theme-button" data-theme="dark-theme">Sombre</button>
+            <button class="theme-button" data-theme="blue-theme">Bleu</button>
+            <button class="theme-button" data-theme="green-theme">Vert</button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main content -->
+      <main class="main-content">
+        <div class="chat-header">
+          <h1>Chat lexical</h1>
+          <div class="header-controls">
+            <div class="mode-selector"></div>
+            <button
+              id="minify-button"
+              class="minify-button"
+              title="Minimiser le chat"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="4 14 10 14 10 20"></polyline>
+                <polyline points="20 10 14 10 14 4"></polyline>
+                <line x1="14" y1="10" x2="21" y2="3"></line>
+                <line x1="3" y1="21" x2="10" y2="14"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="chat-container">
+          <div id="chat-display" class="chat-display"></div>
+          <div class="input-container">
+            <textarea
+              class="input-area"
+              id="message-input"
+              placeholder="Poser une question..."
+              rows="1"
+            ></textarea>
+            <button class="send-button" id="send-button">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 11L12 6L17 11M12 18V7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="disclaimer">ECAL 2025</div>
+        </div>
+      </main>
+
+      <!-- Terminal -->
+      <div id="terminal-container" class="terminal-container hidden">
+        <div class="terminal-header" id="terminal-header">
+          <div class="terminal-title">Terminal</div>
+          <button class="terminal-close" id="close-terminal-button">
+            &times;
+          </button>
+        </div>
+        <div class="terminal-content" id="terminal-content"></div>
+      </div>
+    </div>
+
+    <!-- flip card -->
+
+    <div class="flip-card hidden">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <!-- Contenu existant de la carte recto -->
+        </div>
+        <div class="flip-card-back">
+          <div class="flip-card-back-content"></div>
+          <div class="address">
+            <textarea class="line-text" id="message-text"></textarea>
+            <div class="horizontal-line-1"></div>
+            <div class="horizontal-line-2"></div>
+            <div class="horizontal-line-3"></div>
+            <div class="horizontal-line-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bouton simple -->
+    <!-- <button class="action-button hidden" id="send-button">Send</button> -->
+    <button class="mail-button hidden" id="mail-button">Send</button>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
